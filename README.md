@@ -7,3 +7,6 @@ Demos for making the webR calculator buttons load faster in Chapter 10 of the bo
 1. **Baseline**: shown as they are now
 2. **Version A**: installs only the R packages that each calculator button needs, excluding the ones that are never used
 3. **Version B**: Version A + prepares R packages at the background when a user scrolls nearby the calculator button
+
+
+The code behind the chap. 10's calculator buttons are adapted from Ian Hussey's book (code:MIT licence).
