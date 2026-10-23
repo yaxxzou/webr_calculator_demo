@@ -9,4 +9,4 @@ Demos for making the webR calculator buttons load faster in Chapter 10 of the bo
 3. **Version B**: Version A + prepares R packages at the background when a user scrolls nearby the calculator button
 
 
-The code behind the chap. 10's calculator buttons are adapted from Ian Hussey's book (code:MIT licence).
+The code behind the chap. 10's calculator buttons is adapted from Ian Hussey's book (code: MIT licence).
