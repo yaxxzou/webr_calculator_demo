@@ -1,25 +1,12 @@
 ---
 title: "Baseline"
-format: gfm
+format: html
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+This page will show the chapter 10's calculator buttons as they are now.
 
 ```{r}
-1 + 1
+sd_pooled <- sqrt((4.9^2 + 4.1^2)/2)
+(11.2 - 25.1) / sd_pooled
 ```
 
-You can add options to executable code like this 
-
-```{r}
-#| echo: false
-2 * 2
-```
-
-The `echo: false` option disables the printing of code (only output is displayed).
