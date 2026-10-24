@@ -1,6 +1,5 @@
 ---
 title: "Baseline"
-format: html
 ---
 
 This page will show the chapter 10's calculator buttons as they are now.
