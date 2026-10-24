@@ -1,0 +1,10 @@
+/* Copied from Ian Hussey's _quarto.yml (code: MIT licence) */
+
+/* Observable Inputs.button uses .btn-quarto: give it the plots' blue, and space between stacked buttons */
+/* Applies to both classes btn and btn-quarto */
+/* background-color: #2780e3 is the blue of the cosmo theme */
+.btn.btn-quarto { color: #fff; background-color: #2780e3; border-color: #2780e3; margin: 0.4rem 0; }
+.btn.btn-quarto:hover { background-color: #1f6ab8; border-color: #1f6ab8; }
+
+/* hide the copy button on OJS cells whose code is hidden (echo: false) */
+.code-copy-outer-scaffold > .cell-code.hidden:has(> pre.js) ~ .code-copy-button { display: none; }
