@@ -9,6 +9,8 @@ website:
         text: Home
       - href: baseline.qmd
         text: Baseline
+      - href: version_a.qmd
+        text: Version A
         
 
 format:

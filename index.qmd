@@ -5,3 +5,5 @@ title: "webR calculator demo"
 Demos for making the webR calculators in Chapter 10 load faster.
 
 1. [Baseline](baseline.qmd): calculators as they are now in Chapter 10
+
+2. [Version A](version_a.qmd): only the R packages each calculator needs
