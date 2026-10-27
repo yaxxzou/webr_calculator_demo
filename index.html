@@ -103,6 +103,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./baseline.html"> 
 <span class="menu-text">Baseline</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./version_a.html"> 
+<span class="menu-text">Version A</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -139,7 +143,8 @@ ul.task-list li input[type="checkbox"] {
 
 <p>Demos for making the webR calculators in Chapter 10 load faster.</p>
 <ol type="1">
-<li><a href="./baseline.html">Baseline</a>: calculators as they are now in Chapter 10</li>
+<li><p><a href="./baseline.html">Baseline</a>: calculators as they are now in Chapter 10</p></li>
+<li><p><a href="./version_a.html">Version A</a>: only the R packages each calculator needs</p></li>
 </ol>
 
 
@@ -218,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/yaxxzou\.github\.io\/webr_calculator_demo\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
