@@ -11,6 +11,8 @@ website:
         text: Baseline
       - href: version_a.qmd
         text: Version A
+      - href: version_b.qmd
+        text: Version B
         
 
 format:
