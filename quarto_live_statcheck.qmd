@@ -1,0 +1,33 @@
+---
+title: "quarto-live: statcheck"
+format:
+  live-html:
+    theme: cosmo
+engine: knitr
+webr:
+  packages:
+    - statcheck
+---
+
+{{< include ./_extensions/r-wasm/live/_knitr.qmd >}}
+
+The same statcheck as in [Version B](version_b.qmd), but as editable R code.
+
+Change the results below, or add your own, and press **Run Code**.
+
+```{webr}
+results <- c(
+  "t(58) = 1.46, p = .03",
+  "t(28) = 2.0, p < .05",
+  "F(1, 7) = 12.19, p < .001",
+  "r(40) = -.30, p = .03",
+  "t(30) = 2.10, p = .000"
+)
+statcheck(results)
+```
+
+The same results, treated as one-sided tests:
+
+```{webr}
+statcheck(results, OneTailedTests = TRUE)
+```

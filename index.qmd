@@ -8,3 +8,4 @@ Demos for making the webR calculators in Chapter 10 load faster.
 
 2. [Version A](version_a.qmd): only the R packages each calculator needs
 3. [Version B](version_b.qmd): Version A plus preparing when a calculator scrolls into view
+4. [quarto-live](quarto_live_statcheck.qmd): statcheck as editable R code
