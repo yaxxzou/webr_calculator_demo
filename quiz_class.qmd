@@ -3,7 +3,9 @@ title: "Quiz: Two Channels"
 engine: knitr
 format:
   html:
-    css: include/webex.css
+    css: 
+      - include/webex.css
+      - include/quiz_ios.css
     include-after-body: include/webex.js
 ---
 
