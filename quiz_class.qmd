@@ -26,6 +26,61 @@ Enter your name, answer the questions and submit. Your answers go to Ian.
 
 ## Class: Book Quiz
 
-Coming in Part 4.
+Enter your name, answer the statements and submit. Your answers go to Ian.
+
+:::: {#class-quiz}
+{{< include _pvalue_quiz.qmd >}}
+::::
+
+```{=html}
+<div class="submit-row">
+  <input id="student-name" type="text" placeholder="Your name">
+  <button id="submit-quiz" type="button">Submit</button>
+  <span id="submit-status"></span>
+</div>
+
+<style>
+  /* in class, hide Ian's "Show Answers" button and score */
+  #class-quiz .webex-check-button,
+  #class-quiz .webex-total_correct { display: none; }
+</style>
+
+<script>
+// Google Form "mailbox": where to send, and the ID of each field
+const FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSdLNK9K0bkgpj-95ExjDQhD4rGqUqWhcj3e4J-CXVY3TXtY8A/formResponse";
+const NAME_ID  = "entry.293074322";
+const S_IDS    = ["entry.109706531", "entry.1155878693", "entry.1542228748",
+                  "entry.1549731053", "entry.1995953686", "entry.1562067731"];
+const SCORE_ID = "entry.986173425";
+
+document.getElementById("submit-quiz").addEventListener("click", async () => {
+  const status  = document.getElementById("submit-status");
+  const name    = document.getElementById("student-name").value.trim();
+  const selects = document.querySelectorAll("#class-quiz select.webex-select");
+
+  // the chosen text of each dropdown ("TRUE", "FALSE" or "" if not answered)
+  const answers = [...selects].map(s => s.options[s.selectedIndex].text.trim());
+
+  if (!name)                  { status.textContent = "Please enter your name."; return; }
+  if (answers.includes(""))   { status.textContent = "Please answer all 6 statements."; return; }
+
+  // webexercises marks the correct option with value "answer"
+  const score = [...selects].filter(s => s.value === "answer").length;
+
+  const data = new URLSearchParams();
+  data.append(NAME_ID, name);
+  answers.forEach((a, i) => data.append(S_IDS[i], a));
+  data.append(SCORE_ID, score);
+
+  status.textContent = "Sending…";
+  try {
+    await fetch(FORM_URL, { method: "POST", mode: "no-cors", body: data });
+    status.textContent = "✓ Submitted. Thank you!";
+  } catch (e) {
+    status.textContent = "Couldn't submit. Please check your connection and try again.";
+  }
+});
+</script>
+```
 
 :::
