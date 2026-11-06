@@ -2,7 +2,7 @@ project:
   type: website
   
 website:
-  title: "webR calculator demo"
+  title: "Demos for Ian's Book"
   navbar:
     left:
       - href: index.qmd
@@ -15,6 +15,8 @@ website:
         text: Version B
       - href: quarto_live_statcheck.qmd
         text: quarto-live
+      - href: quiz_class.qmd
+        text: Quiz Demo
         
 
 format:

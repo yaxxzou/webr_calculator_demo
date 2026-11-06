@@ -1,11 +1,19 @@
 ---
-title: "webR calculator demo"
+title: "Demos for Ian's Book"
 ---
+
+## Chapter 10: webR calculators
 
 Demos for making the webR calculators in Chapter 10 load faster.
 
 1. [Baseline](baseline.qmd): calculators as they are now in Chapter 10
-
 2. [Version A](version_a.qmd): only the R packages each calculator needs
 3. [Version B](version_b.qmd): Version A plus preparing when a calculator scrolls into view
 4. [quarto-live](quarto_live_statcheck.qmd): statcheck as editable R code
+
+
+## Chapter 4: Quiz Answers
+
+Demos for collecting students' quiz answers, using the *p*-value quiz.
+
+1. [Quiz Demo](quiz_class.qmd): one quiz page for public readers and for Ian's class.

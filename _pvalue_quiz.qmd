@@ -1,0 +1,10 @@
+::: {.webex-check .webex-box}
+Suppose you have a treatment that you suspect may alter performance on a certain task. You compare the means of your control and experimental groups (say 20 subjects in each sample). Further, suppose you use a simple independent means *t*-test and your result is (*t* = 2.7, *df* = 18, *p* = 0.01). Please mark each of the statements below as "true" or "false". "False" means that the statement does not follow logically from the above premises. Also note that one, several or none of the statements may be correct.
+
+1.  You have absolutely disproved the null hypothesis (that is, there is no difference between the population means). `r webexercises::torf(FALSE)`
+2.  You have found the probability of the null hypothesis being true. `r webexercises::torf(FALSE)`
+3.  You have absolutely proved your experimental hypothesis (that there is a difference between the population means). `r webexercises::torf(FALSE)`
+4.  You can deduce the probability of the experimental hypothesis being true. `r webexercises::torf(FALSE)`
+5.  You know, if you decide to reject the null hypothesis, the probability that you are making the wrong decision. `r webexercises::torf(FALSE)`
+6.  You have a reliable experimental finding in the sense that if, hypothetically, the experiment were repeated a great number of times, you would obtain a significant result on 99% of occasions. `r webexercises::torf(FALSE)`
+:::
